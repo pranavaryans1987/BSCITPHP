@@ -20,7 +20,7 @@
 
 ![image](https://user-images.githubusercontent.com/31475304/209304573-435062e6-855d-4e1c-a3f3-7eb1b4ad7046.png)
 
-# 1. Addition Of 2 Numbers in PHP With Bootstrap
+# 2. Addition Of 2 Numbers in PHP With Bootstrap
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <?php
