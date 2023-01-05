@@ -114,3 +114,45 @@
 ```
 ![image](https://user-images.githubusercontent.com/31475304/210761764-28e399d1-31f6-46ab-826b-a296a4d2d6ef.png)
 
+# 4. PHP Looping Structures
+```
+<?php
+	//For Loop
+	for($i=1;$i<=5;$i++)
+	{
+		for($j=1;$j<=$i;$j++)
+		{
+			echo $j;
+		}
+		echo "<br>";
+	}
+	
+	//While Loop
+	$i = 1;
+	while($i<=5)
+	{
+		$j = 1;
+		while($j<=$i)
+		{
+			echo $j;
+			$j++;
+		}
+		echo "<br>";
+		$i++;
+	}
+	
+	//Do..While Loop
+	$i=1;
+	do
+	{
+		$j=1;
+		do
+		{
+				echo $j;
+				$j++;
+		}while($j<=$i);
+		echo "<br>";
+		$i++;
+	}while($i<=5);
+?>
+```
