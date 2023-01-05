@@ -46,3 +46,71 @@
 ```
 
 ![image](https://user-images.githubusercontent.com/31475304/209306372-29d99fd9-8d44-482d-ad22-b0187047a17b.png)
+
+# 3. Result Using Conditional Statements
+```
+<?php
+	$m1 = $m2 = $m3 = $total = $per = 0;
+	$result = $grade = "----";
+	if(isset($_POST['txtm1']))
+	{
+		$m1 = $_POST['txtm1'];
+		$m2 = $_POST['txtm2'];
+		$m3 = $_POST['txtm3'];
+		$total = $m1 + $m2 + $m3;
+		if($m1>=40 && $m2 >=40 && $m3 >=40)
+		{
+			$per = $total / 3;
+			$result = "PASS";
+			if($per >=70)
+			{
+				$grade = "A+";
+			}
+			else if($per >=60)
+			{
+				$grade = "A";
+			}
+			else if($per >=50)
+			{
+				$grade = "B";
+			}
+			else
+			{
+				$grade = "C";
+			}
+		}
+		else
+		{
+			$per = 0;
+			$result = "FAIL";
+			$grade = "ATKT";
+		}
+	}
+?>
+<form action="global.php" method="POST">
+	<input type="number" name="txtm1" required>
+	<input type="number" name="txtm2" required>
+	<input type="number" name="txtm3" required>
+	<input type="submit" value="Result">
+</form>
+<table width="100%">
+	<tr>
+		<td>Marks1
+		<td>Marks2
+		<td>Marks3
+		<td>Total
+		<td>Per
+		<td>Grade
+		<td>Result
+	<tr>
+		<td><?php echo $m1; ?>
+		<td><?php echo $m2; ?>
+		<td><?php echo $m3; ?>
+		<td><?php echo $total; ?>
+		<td><?php echo $per; ?>
+		<td><?php echo $grade; ?>
+		<td><?php echo $result; ?>
+</table>
+```
+![image](https://user-images.githubusercontent.com/31475304/210761764-28e399d1-31f6-46ab-826b-a296a4d2d6ef.png)
+
